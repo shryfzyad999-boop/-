@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع زياد الشخصي - إصدار محسن</title>
+    <style>
+        /*===== 1. التنسيقات العامة والخطوط =====*/
+        body {
+            font-family: 'Tahoma', 'Arial', sans-serif;
+            background-color: #e9ecef; /* خلفية رمادية فاتحة جداً */
+            color: #212529; /* لون نص داكن */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /*===== 2. شريط العنوان (Header) =====*/
+        header {
+            background-color: #0056b3; /* أزرق داكن جذاب */
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* ظل أعمق */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* ظل نصي بسيط */
+        }
+
+        /*===== 3. قائمة التنقل (Navigation) =====*/
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            color: #ffda6a; /* أصفر ذهبي عند الوقوف بالماوس */
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /*===== 4. محتوى الصفحة (Container & Sections) =====*/
+        .container {
+            width: 90%; /* أصبح أوسع قليلاً */
+            max-width: 1100px;
+            margin: 30px auto;
+            overflow: hidden;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px; /* زوايا دائرية أكثر */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ظل أنظف */
+        }
+
+        .section h2 {
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        
+        /*===== 5. التذييل (Footer) =====*/
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /*===== 6. التصميم المتجاوب (لشاشات الموبايل) =====*/
+        @media (max-width: 600px) {
+            .container {
+                width: 95%; /* استخدام مساحة أكبر على الموبايل */
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                display: block; /* جعل الروابط تحت بعضها */
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>موقع زياد للمشاريع البرمجية</h1>
+        <nav>
+            <a href="#about">عني</a>
+            <a href="#projects">مشاريعي</a>
+            <a href="#contact">تواصل</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div id="about" class="section">
+            <h2>👋 أهلاً بك!</h2>
+            <p>أنا زياد، مبرمج مستقبلي وعاشق للتقنية. أبلغ من العمر 10 سنوات وأحب اكتشاف أسرار البرمجة وأجهزة الكمبيوتر القديمة. هذا الموقع هو بدايتي لتوثيق كل الأفكار والبرامج اللي بعملها!</p>
+            <p>هدفى دلوقتي إني أتعلم $\text{HTML}$ و $\text{CSS}$ وبعد كده أدخل على $\text{Python}$.</p>
+        </div>
+
+        <div id="projects" class="section">
+            <h2>💻 مشاريع قيد التنفيذ</h2>
+            <ul>
+                <li>**مشروع 1: آلة حاسبة بسيطة ($\text{Python}$):** برنامج يجمع ويطرح الأرقام.</li>
+                <li>**مشروع 2: صفحتي الأولى على الويب ($\text{HTML}/\text{CSS}$):** اللي بتشوفها دلوقتي!</li>
+                <li>**مشروع 3: لعبة $\text{Scratch}$:** تصميم لعبة بسيطة لتعلم المنطق.</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>📧 للتواصل</h2>
+            <p>للتواصل معي بخصوص أي أفكار جديدة أو استفسارات برمجية:</p>
+            <p>البريد الإلكتروني: <a href="mailto:shryfzyad999@gmail.com">shryfzyad999@gmail.com</a></p>
+            <p>تابع رحلتي في البرمجة!</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 موقع زياد. كل الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
